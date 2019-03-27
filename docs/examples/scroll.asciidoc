@@ -77,7 +77,7 @@ async function run () {
     })
 
     // check to see if we have collected all of the quotes
-    if (body.hits.total.value === allQuotes.length) {
+    if (body.hits.total === allQuotes.length) {
       console.log('Every quote', allQuotes)
       break
     }
